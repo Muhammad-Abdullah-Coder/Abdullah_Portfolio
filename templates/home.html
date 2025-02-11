@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Portfolio{% endblock %}
+
+{% block content %}
+{% load static %} 
+
+<!-- Introduction Section -->
+<section class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1 class="display-4 text-center text-primary">Hey, My name is <span class="text-secondary">Muhammad Abdullah</span></h1>
+            <p class="lead text-center mb-4">and I am a passionate Web & App Developer</p>
+            <span class="text-secondary">
+                A passionate developer dedicated to creating innovative, user-friendly web solutions using modern frontend and backend technologies.
+            </span>
+            <div class="text-center mt-4">
+                <a href="https://drive.google.com/file/d/1USc2WUt2Y6B4ib1BSRV4TEYddRHzWe9Z/view?usp=sharing" class="btn btn-info btn-lg" target="_blank">
+                    <i class="fas fa-file-pdf"></i> CV
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <img class="rightSection" src="{% static 'media/pnh.png' %}" alt="Image">
+        </div>
+    </div>
+</section>
+
+<hr>
+
+ <div class="container mt-5">
+        <center>
+        <div class="card shadow-sm border-light rounded-lg" id="hsd">
+            <div class="card-body text-center p-4">
+                <h4 class="card-title text-primary mb-3">
+                    <i class="bi bi-person-lines-fill"></i> Let's Connect
+                </h4>
+                <p class="card-text text-muted mb-4">
+                    <p class="text-warning">If you're looking to collaborate, discuss a project, or interested in hiring me, feel free to reach out! I'm always excited to connect with like-minded people.
+                     You can click the button <strong><i>'Contact Me'</i></strong> in the header to reach out to me on LinkedIn.</p>
+                </p>
+            </div>
+        </div>
+    </center> 
+    </div>
+<br>
+
+<section id="skills" class="my-5">
+    <h2 class="text-center mb-4 text-primary font-weight-bold" style="background-color: white; padding: 10px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <i class="fas fa-cogs mr-2"></i> Skills & Tools I Expertise In
+    </h2>    
+    <br><br>
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3 text-center">Frontend Languages</h3>
+            <ul class="list-unstyled">
+
+            <div class="container mt-5 mb-4 p-4 border rounded shadow-sm">  
+                <li class="d-flex align-items-center mb-4">
+                    <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
+                    </a>
+                    <span class="h5">HTML</span>
+                </li>
+                <li>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </li>
+                <br>
+                <li class="d-flex align-items-center mb-4">
+                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
+                    </a>
+                    <span class="h5">CSS</span>
+                </li>
+                <li>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                </li>
+            </div>
+
+            <div class="container mt-5 mb-4 p-4 border rounded shadow-sm">
+                <li class="d-flex align-items-center mb-4">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
+                    </a>
+                    <span class="h5">JavaScript</span>
+                </li>
+                <li>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </li>
+                <br>
+                <li class="d-flex align-items-center mb-4">
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="40" height="40" />
+                    </a>
+                    <span class="h5">Bootstrap</span>
+                </li>
+                <li>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </li>
+            </ul>
+           </div> 
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3 text-center">Frontend Frameworks</h3>
+            <span class="text-center text-secondary">
+                Currently, I am learning React.js and Vue.js to enhance my frontend development skills. Though I am still in the learning phase, I am dedicated to mastering these frameworks soon. I am confident that with consistent effort, I will be proficient in both and able to create dynamic and modern web applications in no time. Want to learn too? Click the button!
+            </span> 
+            <div class="container mt-5 mb-4 p-4 border rounded shadow-sm">  
+                <ul class="list-unstyled"> 
+                    <!-- React.js or Vue.js Skill -->
+                    <li class="d-flex align-items-center mb-4">
+                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40" height="40" />
+                        </a>
+                        <span class="h5">React.js | Vue.js</span>
+                        <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="vuejs" width="40" height="40" />
+                        </a>
+                    </li>
+                    <li>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Call to Action Button -->
+                <div class="text-center mt-3">
+                    <a href="https://reactjs.org/" class="btn btn-info btn-lg" target="_blank">Learn React.js</a>
+                    <a href="https://vuejs.org/" class="btn btn-success btn-lg mx-2" target="_blank">Learn Vue.js</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <!-- Heading for Databases -->
+            <h3 class="text-primary mb-3 text-center">Database</h3>
+            <span class="text-center text-secondary">
+                I am proficient in SQLite and currently learning MySQL to expand my database management skills. With continued effort, I aim to master MySQL soon. Want to learn too? Click the button below!
+            </span> 
+            <div class="container mt-5 mb-4 p-4 border rounded shadow-sm">  
+                <ul class="list-unstyled"> 
+                    <!-- SQLite and MySQL Skills -->
+                    <li class="d-flex align-items-center mb-4">
+                        <!-- SQLite Icon -->
+                        <a href="https://www.sqlite.org/index.html" target="_blank" rel="noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="sqlite" width="40" height="40" />
+                        </a>
+                        <span class="h5 mx-2">SQLite</span>
+                        <!-- MySQL Icon -->
+                        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" />
+                        </a>
+                        <span class="h5 mx-2">MySQL</span>
+                    </li>
+                    <!-- Progress Bar for SQLite -->
+                    <li>
+                        <span class="text-secondary">SQLite</span>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </li>
+                    <!-- Progress Bar for MySQL -->
+                    <li class="mt-3">
+                        <span class="text-secondary">MySQL</span>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Call to Action Buttons -->
+                <div class="text-center mt-3">
+                    <a href="https://www.sqlite.org/index.html" class="btn btn-info btn-lg" target="_blank">Learn SQLite</a>
+                    <a href="https://www.mysql.com/" class="btn btn-warning btn-lg mx-2" target="_blank">Learn MySQL</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <hr>
+    
+    <!-- Backend Developer Skills -->
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3 text-center">Backend Languages</h3>
+          <div class="container mt-5 mb-4 p-4 border rounded shadow-sm">  
+              <ul class="list-unstyled"> 
+                  <li class="d-flex align-items-center mb-4">
+                    <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" />
+                    </a>
+                      <span class="h5">  Python</span>
+                  </li>
+                  <li>
+                      <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                  </li>
+              </ul>
+          </div>  
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <h3 class="text-primary mb-3 text-center">Backend Frameworks</h3>
+            <span class="text-center text-secondary">
+                Currently, I am learning Django REST API to enhance my backend development skills. Though I am still in the learning phase, I am dedicated to mastering it soon. I am confident that with consistent effort, I will be proficient in building powerful RESTful APIs using Django and be able to create scalable and robust backend solutions in no time. Want to learn too? Click the button!
+            </span>
+            <div class="container mt-5 mb-4 p-4 border rounded shadow-sm">  
+                <ul class="list-unstyled">
+                    <!-- Django Section -->
+                    <li class="d-flex align-items-center mb-4">
+                        <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+                            <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40" />
+                        </a>
+                        <span class="h5">Django | Rest Api</span>
+                    </li>
+                    <li>
+                        <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="https://www.djangoproject.com/" class="btn btn-dark btn-lg mx-2" target="_blank">Learn Django</a>
+                    <a href="https://www.django-rest-framework.org/" class="btn btn-danger btn-lg mx-2" target="_blank">Learn Django REST API</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+{% endblock %}

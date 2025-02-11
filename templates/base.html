@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio Website{% endblock %}</title>
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> {% endcomment %}
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: rgb(6, 6, 36);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header and Footer Styling */
+        header{
+            background-color: rgb(16, 16, 97);
+            color: white;
+        }
+
+        footer{
+            background-color: rgb(16, 16, 97);
+            color: white;
+        }
+
+        footer {
+            padding: 10px 0;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f39c12 !important;
+            transition: color 0.3s ease; /* Smooth transition effect */
+        }
+
+        .container-fluid {
+            padding: 0 5%; /* Adjusted for better space */
+        }
+        i{
+            color: white;
+            height: 20px;
+            width: 20px;
+        }
+        .rightSection{
+            width: 80%;
+            margin: 40px 0;
+        }
+
+        /* Center align text */
+        h3, .h5 {
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Progress Bar Styling */
+        .progress-bar {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px; /* Rounded corners */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        /* Navbar Styling */
+        .navbar-nav {
+            font-size: 1.1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f39c12 !important;
+            transition: color 0.3s ease;
+        }
+
+        #hsd{
+            background-color: black;
+            width: 35%;
+        }
+        
+        footer a {
+            margin-right: 15px;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f39c12; /* Hover color */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="py-4">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Abdullah-Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'dproject:project_list' %}">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/muhammad-abdullah-coder" target="_blank" rel="noopener noreferrer">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- Footer -->
+    <footer class="text-center py-4 text-white">
+        <hr>
+        <p><i>Tap on the icons below to explore my social media profiles and follow me!</i></p>
+        <hr>
+        <a href="https://github.com/Muhammad-Abdullah-Coder" class="text-white mx-3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <span class="text-white mx-2"></span>
+        <a href="https://www.linkedin.com/in/muhammad-abdullah-coder" class="text-white mx-3" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <span class="text-white mx-2"></span>
+        <a href="https://www.instagram.com/abdllah628?igsh=MW91NmZrZnY5YXZlZA==" class="text-white mx-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <span class="text-white mx-2"></span>
+        <a href="https://www.facebook.com/abdullahmehar.mehar.560?mibextid=ZbWKwL" class="text-white mx-3" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <span class="text-white mx-2"></span>
+        <a href="https://twitter.com/M_abdullah_628?t=Zt5zkjT0uGHAxzcAz_aRnA&s=09" class="text-white mx-3" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
