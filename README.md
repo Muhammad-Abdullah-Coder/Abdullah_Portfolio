@@ -69,7 +69,7 @@ You can deploy this project on platforms like:
 - **Hostcry (Your Hosting Provider)**
 
 ## Video Demo
-You can watch the complete project demo here: [Google Drive Link](your-video-link-here)
+You can watch the complete project demo here: https://drive.google.com/drive/folders/1Ffo40UPmhbiH51w1vI3s2KPlODTsKNEq?usp=drive_link
 
 ## Contact
 If you have any questions or suggestions, feel free to reach out!
